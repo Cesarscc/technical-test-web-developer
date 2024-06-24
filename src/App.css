@@ -1,0 +1,118 @@
+.app {
+  height: 100dvh;
+}
+.app main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.box_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box_title .title_app {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+main input {
+  width: 20dvw;
+  height: 20px;
+  outline-color: darkslategrey;
+  padding: 5px;
+}
+main button {
+  width: 220px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: slategray;
+}
+main button:disabled {
+  color: dimgrey;
+  background-color: grey;
+}
+
+.content__user {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 710px) {
+  .content__user {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.content__info_user {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid slategrey;
+  gap: 5px;
+}
+.content__info_user p {
+  font-size: 10px;
+  color: #c7d5da;
+}
+
+.error {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(79, 86, 87, 0.8);
+}
+
+.error_box {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: fixed;
+  background-color: black;
+  width: 550px;
+  height: 400px;
+}
+.error_box .error_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.error_box .error_content p {
+  font-size: 22px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+.error_box button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/*# sourceMappingURL=App.css.map */
